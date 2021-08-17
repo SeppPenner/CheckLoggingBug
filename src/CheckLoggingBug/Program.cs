@@ -30,6 +30,10 @@ namespace CheckLoggingBug
 
             SelfLog.Enable(Console.WriteLine);
             Log.Warning("whatever contains {}");
+
+            Log.CloseAndFlush();
+
+            Console.ReadKey();
         }
     }
 }
